@@ -1,12 +1,13 @@
 # Apache Arrow Flight benchmarking client
 
-This application can be used to benchmark Apache Arrow Flight servers. It was tailored for evaluating the server created using [IBM Cloud Pak for Data - Connector SDK](https://github.com/IBM/cp4d-connector-sdk). 
+This application can be used to benchmark Apache Arrow Flight servers. It was tailored for evaluating the server created using [IBM Cloud Pak for Data - Connector SDK fork](https://github.com/mpietr/cp4d-connector-sdk). 
 
 Measurements and metrics:
-    - data fetch time from the server,
-    - fetch time of only the first batch of data,
-    - received data size,
-    - server throughput.
+
+    * data fetch time from the server,
+    * fetch time of only the first batch of data,
+    * received data size,
+    * server throughput.
 
 The client assumes that the server supports the following data sources: mocked batch, DummyJDBC and PostgreSQL.
 
@@ -34,6 +35,6 @@ For supported functionalities refer to the command line options:
 
 ## Example
 
-Run 10 iterations of tests for the `DummyJDBC` data source with batch size 10000.
+Run 10 iterations of tests for the `DummyJDBC` data source with batch size 10000:
 
 `python benchmark.py -n 10 -b 10000 -a api_key`
