@@ -4,10 +4,10 @@ This application can be used to benchmark Apache Arrow Flight servers. It was ta
 
 Measurements and metrics:
 
-    * data fetch time from the server,
-    * fetch time of only the first batch of data,
-    * received data size,
-    * server throughput.
+ * data fetch time from the server,
+ * fetch time of only the first batch of data,
+ * received data size,
+ * server throughput.
 
 The client assumes that the server supports the following data sources: mocked batch, DummyJDBC and PostgreSQL.
 
